@@ -20,11 +20,13 @@
     @apply absolute w-full h-full flex justify-center items-center rounded-xl;
     backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
+    z-index: 1;
   }
 
   .back {
     transform: rotateY(180deg);
     -webkit-transform: rotateY(180deg);
+    z-index: 0;
     @apply bg-slate-300;
   }
   .back.completed {
